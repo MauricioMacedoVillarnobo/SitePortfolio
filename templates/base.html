@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}MMV Consultoria{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="{% url 'pages:home' %}">Início</a></li>
+                <li><a href="{% url 'projects:project_index' %}">Projetos</a></li>
+                <li><a href="{% url 'pages:about' %}">Sobre Nós</a></li>
+                <li><a href="{% url 'pages:tools' %}">Ferramentas/Habilidades</a></li>
+                <li><a href="{% url 'pages:contact' %}">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+        <p>© MMV Consultoria 2025 - <a href="https://www.linkedin.com/company/mmv">LinkedIn</a> | <a href="mailto:contato@mmv.com.br">Email</a></p>
+    </footer>
+</body>
+</html>

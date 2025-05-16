@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}{{ project.title }} - MMV Consultoria{% endblock %}
+
+{% block content %}
+<div class="home-container">
+    <h1>{{ project.title }}</h1>
+
+    {% if project.image %}
+        <img src="{{ project.image.url }}" alt="{{ project.title }}" class="project-img">
+    {% endif %}
+
+    <h3>Sobre o Projeto:</h3>
+    <p>{{ project.description }}</p>
+
+    <h3>Tecnologias Utilizadas:</h3>
+    <p>{{ project.technology }}</p>
+
+    <a href="{% url 'projects:project_index' %}" class="project-link">← Voltar para Projetos</a>
+</div>
+{% endblock %}
