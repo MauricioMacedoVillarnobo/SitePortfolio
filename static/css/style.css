@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'VT323';
-    src: url('../fonts/VT323-Regular.ttf') format('truetype');
+    src: url('/static/fonts/VT323-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -13,6 +13,18 @@ body {
     padding: 0;
 }
 
+h1 {
+    font-size: 32pt;
+}
+
+p {
+    font-size: 18pt;
+}
+
+li {
+    font-size: 18pt;
+}
+
 .navbar {
     background-color: #111;
     padding: 1rem;
@@ -20,6 +32,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
+    font-size: 20pt;
 }
 
 .navbar ul {
@@ -37,6 +50,7 @@ body {
     color: #008600;
     text-decoration: none;
     font-weight: bold;
+    
 }
 
 .navbar a:hover {
@@ -63,8 +77,9 @@ ul {
     text-align: center;
     padding: 1rem;
     background-color: #111;
-    font-size: 0.9rem;
+    font-size: 15pt;
 }
+
 .footer a {
     color: #008600;
 }
