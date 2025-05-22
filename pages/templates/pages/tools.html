@@ -1,17 +1,66 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Ferramentas & Habilidades{% endblock %}
+{% block title %}Habilidades{% endblock %}
 
 {% block content %}
 <div class="home-container">
-    <h1>Ferramentas & Habilidades</h1>
+    <h1>Nossas habilidades</h1>
     <ul>
-        <li>💻 Python, Django, JavaScript</li>
-        <li>🗄️ PostgreSQL, SQLite</li>
-        <li>📈 Power BI, Excel Avançado</li>
-        <li>⚙️ Git, Docker, CI/CD</li>
-        <li>🌐 APIs REST, Web Scraping</li>
+        <div class="card">
+  <div class="card-body">
+    <p>Linguagens</p>
+    </div>
+</div>
+        <div class="card" style="width: 5rem;">
+            <img src="{% static 'images/javalogo.png' %}" class="javacard-img-top" alt="Logo Java"/>
+            <div class="card-body">
+            <p class="card-text">Java</p>
+        </div>
+        </div>
+
+        <div class="card" style="width: 5rem;">
+            <img src="{% static 'images/Python-logo-notext.svg.png' %}" class="python-img-top" alt="Logo Python"/>
+            <div class="card-body">
+            <p class="card-text">Python</p>
+        </div>
+        </div>
+
+           <div class="card" style="width: 5rem;">
+            <img src="{% static 'images/c-programming.png' %}" class="c-img-top" alt="Logo C"/>
+            <div class="card-body">
+            <p class="card-text">C</p>
+        </div>
+        </div>
+
+            <div class="card" style="width: 5rem;">
+            <img src="{% static 'images/c#.png' %}" class="c#-img-top" alt="Logo C#"/>
+            <div class="card-body">
+            <p class="card-text">C#</p>
+        </div>
+        </div>    
+
+            <div class="card" style="width: 5rem;">
+            <img src="{% static 'images/css.png' %}" class="css-img-top" alt="Logo CSS"/>
+            <div class="card-body">
+            <p class="card-text">CSS</p>
+        </div>
+        </div>
+
+          <div class="card" style="width: 5rem;">
+            <img src="{% static 'images/html.png' %}" class="html-img-top" alt="Logo HTML"/>
+            <div class="card-body">
+            <p class="card-text">HTML</p>
+        </div>
+        </div>
+
+
+        <li> Python, Django, JavaScript</li>
+        <li> PostgreSQL, SQLite</li>
+        <li> Power BI, Excel Avançado</li>
+        <li> Git, Docker, CI/CD</li>
+        <li> APIs REST, Web Scraping</li>
     </ul>
 </div>
+
 {% endblock %}
