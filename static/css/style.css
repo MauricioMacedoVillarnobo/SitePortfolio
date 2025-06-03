@@ -114,3 +114,34 @@ ul {
     color: #008600;
     text-decoration: underline;
 }
+
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.skill-card {
+    background-color: #1e1e1e;
+    border: 1px solid #008600;
+    border-radius: 6px;
+    width: 120px;
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.2s ease-in-out;
+    color: #008600;
+    font-family: 'VT323', monospace;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+.skill-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
